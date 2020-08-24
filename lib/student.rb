@@ -1,16 +1,15 @@
 class Student
 
   # Remember, you can access your database connection anywhere in this class
-  #  with DB[:conn]  
+  #  with DB[:conn]
   
-                    class Song
-                        attr_accessor :name, :album, :id
+  attr_accessor :name, :album, :id
 
-                        def initialize(name, album, id=nil)
-                            @id -id
-                            @name=name
-                            @album=album
-                        end
+  def initialize(name, album, id=nil)
+    @id -id
+    @name=name
+    @album=album
+  end
 
                         def self. create_table
                             sql = <<-SQL
