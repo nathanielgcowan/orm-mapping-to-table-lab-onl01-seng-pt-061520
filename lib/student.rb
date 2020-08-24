@@ -36,7 +36,7 @@ class Student
   end
   
   def create
-    sudent = Student.new(name,grade)
+    student = Student.new(name,grade)
     student.save
   end
 end
