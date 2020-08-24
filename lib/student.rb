@@ -18,7 +18,13 @@ class Student
     SQL
     DB[:conn].execute(sql)
   end
-
+  
+  def drop_table
+    sql = <<-SQL
+    
+    SQL
+    DB[:conn].execute(sql)
+  end
   def save 
     sql = <<-SQL
     INSERT INTO songs (name, album)
