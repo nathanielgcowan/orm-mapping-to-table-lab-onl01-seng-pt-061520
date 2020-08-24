@@ -20,8 +20,7 @@ class Student
   end
   
   def drop_table
-    sql = <<-SQL
-    
+    sql = "DROP TABLE if "
     SQL
     DB[:conn].execute(sql)
   end
